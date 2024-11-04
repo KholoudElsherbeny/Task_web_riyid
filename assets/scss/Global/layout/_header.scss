@@ -1,0 +1,91 @@
+// =================== start header ===========
+.header_component {
+  .item {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+    .overlay {
+      position: absolute;
+      opacity: unset;
+      background: rgba($color: #1c1c1c, $alpha: 0.6);
+    }
+
+    .image {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      @include centering;
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      img {
+        width: 266px;
+        height: 240px;
+      }
+
+      h1 {
+        color: $white;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 40px 0 70px;
+      }
+
+      button {
+        color: $white;
+        background: $mainColor;
+
+        &:hover,
+        &:focus {
+          color: $mainColor;
+          box-shadow: inset -9em 0 0 0 #fff, inset 9em 0 0 0 #fff;
+        }
+      }
+    }
+  }
+
+  .owl-theme {
+    .owl-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      position: absolute;
+      z-index: 99;
+      bottom: 20px;
+      transform: translateX(-50%);
+      left: 50%;
+
+      button {
+        width: unset;
+
+        span {
+          width: 32px;
+          height: 6px;
+          // transform: rotate(45deg);
+          border-radius: 20px !important;
+        }
+        &.owl-dot.active {
+          span {
+            background: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}
+// =================== end header =============

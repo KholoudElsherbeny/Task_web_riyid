@@ -1,0 +1,114 @@
+// ========== start contact page ============
+.contact_component {
+  margin: 80px auto 100px;
+  position: relative;
+  overflow-x: hidden;
+
+  .all_content {
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 60px 40px 25px 90px;
+    position: relative;
+
+    .vti__dropdown {
+      background: #fff !important;
+    }
+
+    .all_info {
+      .head {
+        .main_head {
+          max-width: 280px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #fff;
+          margin-top: -80px;
+          margin-bottom: 20px;
+        }
+      }
+
+      form {
+        .main_input {
+          input,
+          textarea {
+            border-radius: 12px;
+            background: #fff;
+            border: 1px solid #eee;
+            color: #a5a5a5;
+            text-indent: 1px;
+
+            &::placeholder {
+              color: #a5a5a5;
+            }
+          }
+
+          textarea {
+            height: 130px;
+          }
+        }
+
+        .main_btn {
+          &:hover {
+            box-shadow: inset -18em 0 0 0 #fff, inset 18em 0 0 0 #fff;
+          }
+        }
+      }
+    }
+
+    .info {
+      text-align: start;
+
+      .logo {
+        margin-bottom: 50px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 32px;
+
+        li {
+          a {
+            span {
+              font-weight: 500;
+              color: #1c1c1c;
+            }
+
+            svg {
+              color: $mainColor;
+
+              &.whatsapp {
+                color: green;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .back_images {
+      .right_hand {
+        position: absolute;
+        right: -120px;
+        top: 0;
+
+        img {
+          width: 147px;
+          height: 147px;
+        }
+      }
+      .left_hand {
+        position: absolute;
+        left: -120px;
+        top: 0;
+        img {
+          width: 147px;
+          height: 147px;
+        }
+      }
+    }
+  }
+}
+// ========== contact contact page ==========

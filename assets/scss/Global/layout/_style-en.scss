@@ -1,0 +1,23 @@
+// ============ style en ===========
+html[lang="en-US"] body {
+  direction: ltr;
+  text-align: left;
+
+  .profile_side_component .images_pattern {
+    right: 50px;
+    left: auto;
+  }
+
+  .eye {
+    left: auto;
+    right: 40px;
+  }
+
+  .contact_component .all_content .info .logo {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+
+// ============ style en ===========

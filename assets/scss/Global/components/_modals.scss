@@ -1,0 +1,357 @@
+// ================ start modals =========
+.modal {
+  .main_modal {
+    @include centering;
+    max-width: 640px;
+
+    &.bill_modal {
+      max-width: 940px;
+      .modal-content {
+        .modal-body {
+          padding: 30px;
+
+          .bill_content {
+            .image {
+              img,
+              svg {
+                width: 100%;
+                height: 330px;
+                margin-bottom: 40px;
+                object-fit: contain;
+              }
+            }
+            .logo {
+              margin: auto;
+              text-align: center;
+              height: 70px;
+              width: 70px;
+              object-fit: contain;
+            }
+
+            .bill_info {
+              ul {
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+
+                li {
+                  display: flex;
+                  justify-content: space-between;
+
+                  span {
+                    color: #1c1c1c;
+                    font-weight: 500;
+
+                    &.num {
+                      font-weight: 700;
+
+                      &.price_num {
+                        color: $mainColor;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .main_btn {
+              margin-top: 60px;
+
+              &:hover {
+                box-shadow: inset -14em 0 0 0 #fff, inset 14em 0 0 0 #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.add_project {
+      .modal-content header {
+        position: absolute;
+        z-index: 99;
+        left: 8px;
+        width: 100%;
+
+        button.close {
+          background: rgba(255, 59, 48, 1);
+          color: #fff;
+        }
+      }
+
+      .modal-body {
+        padding: 0;
+        .content_modal {
+          padding: 0;
+
+          .image {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+
+            img {
+              width: 100%;
+              max-height: 300px;
+              object-fit: cover;
+            }
+
+            .change_background {
+              position: absolute;
+              bottom: 30px;
+              left: 100px;
+            }
+          }
+
+          .info {
+            margin-bottom: 10px;
+            p {
+              color: #959595;
+              font-size: 16px;
+              font-weight: 800;
+
+              &:last-of-type {
+                font-size: 14px;
+                font-weight: 500;
+              }
+            }
+          }
+
+          .toggler {
+            margin-top: 16px;
+            span {
+              color: #4b4b4b;
+              font-size: 18px;
+              font-weight: 800;
+            }
+          }
+
+          .all_modal_body {
+            padding: 0 32px 0px;
+          }
+        }
+      }
+    }
+
+    &.logout_modal {
+      .modal-content {
+        header {
+          padding: unset !important;
+
+          button {
+            &.close {
+              position: absolute;
+              z-index: 9;
+              background: firebrick;
+              color: #fff;
+            }
+          }
+        }
+
+        .modal-body {
+          padding: unset !important;
+          .content_modal {
+            padding: unset !important;
+            .image {
+              width: 100%;
+              max-width: 100%;
+              height: 100%;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .footer_content {
+              padding: 0 30px;
+              .info {
+                p {
+                  font-size: 17px;
+                  font-weight: 500;
+                  color: #1c1c1c;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modal-content {
+      border-radius: 16px;
+      header {
+        margin: 0;
+        padding: 25px;
+        border: none;
+
+        button.close {
+          width: 32px;
+          height: 32px;
+          background: #d3d3d3;
+          @include centering;
+          border-radius: 50px;
+          position: absolute;
+          left: 25px;
+          top: 30px;
+        }
+      }
+
+      .content_modal {
+        padding: 0 50px;
+        margin-bottom: 40px;
+        .image {
+          max-width: 300px;
+          height: auto;
+          margin: auto;
+          text-align: center;
+          margin-bottom: 25px;
+
+          img {
+          }
+        }
+
+        .info {
+          p {
+            font-weight: 800;
+            font-size: 28px;
+            text-align: center;
+          }
+
+          .resend_code {
+            p {
+              font-size: 18px;
+              padding-top: 22px;
+              font-weight: 500;
+              color: $mainColor;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .btns_footer {
+        display: flex;
+        // flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 40px;
+
+        button {
+          &.main_btn.ok {
+          }
+
+          &.main_btn.close_btn {
+            border: 1px solid #ff3b30;
+            color: #ff3b30;
+            background: transparent;
+
+            &:hover {
+              box-shadow: inset -9em 0 0 0 #ff3b30, inset 9em 0 0 0 #ff3b30;
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .reset_pass {
+        margin-top: 35px;
+        &:hover {
+          box-shadow: inset -18em 0 0 0 #fff, inset 18em 0 0 0 #fff;
+        }
+      }
+
+      .sender_phone {
+        margin: 32px 0 16px;
+
+        .phone {
+          color: #008a56;
+          font-weight: 800;
+        }
+      }
+
+      .timer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        span {
+          // color: $thirdColor;
+        }
+
+        .counter {
+          color: #008a56;
+          font-size: 20px;
+          font-weight: 900;
+        }
+      }
+
+      .pass_numbers {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+          border-radius: 50px;
+          text-align: center;
+          width: 80px;
+          height: 80px;
+          color: #008a56;
+          font-size: 20px;
+          font-weight: 900;
+        }
+      }
+    }
+
+    &.payment_modal {
+      .content_modal {
+        .title {
+          color: #959595;
+          font-size: 16px;
+          font-weight: 800;
+          margin-bottom: 10px;
+        }
+
+        .images {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+
+          .box_image {
+            width: 120px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            border: 3px solid #f0f0f0;
+            img {
+              max-width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-open .modal {
+  padding: 0 30px;
+}
+// ================ End modals ===========
+
+@media print {
+  @page {
+    size: orientation;
+  }
+
+  .subscribe_page,
+  .navbar_component,
+  .footer_component,
+  .modal .main_modal .modal-content header button.close,
+  .modal
+    .main_modal.bill_modal
+    .modal-content
+    .modal-body
+    .bill_content
+    .main_btn {
+    display: none;
+  }
+}

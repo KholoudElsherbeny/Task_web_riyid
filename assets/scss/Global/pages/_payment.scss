@@ -1,0 +1,117 @@
+// ===================== start payment ===================
+.payment {
+  .order_detail {
+    border: 1px solid #eeeeee;
+    background: $white;
+    padding: 16px;
+    border-radius: 4px;
+
+    h4 {
+      color: $mainColor;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .info {
+      p {
+        color: #333333;
+        font-weight: 500;
+
+        &.title {
+        }
+      }
+
+      &.total {
+        border-top: 1px solid #eeeeee;
+        padding-top: 16px;
+        margin-top: 16px;
+
+        p {
+          &.price {
+            color: $mainColor;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .hint {
+      display: block;
+      color: #a5a5a5;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    &.bank_box {
+      h5 {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 16px;
+        color: $mainColor;
+      }
+
+      h6 {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+
+      .all_methods {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 32px;
+
+        .form-group {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          input {
+            width: 18px;
+            height: 18px;
+            accent-color: indigo;
+          }
+          // label {
+          //   display: flex;
+          //   gap: 12px;
+          // }
+
+          img {
+            width: 40px;
+            object-fit: contain;
+          }
+        }
+      }
+
+      form {
+        .form-group {
+          &.main_input {
+            input {
+              background: #fdfdfd;
+              color: #a5a5a5;
+
+              &::placeholder {
+                color: #a5a5a5;
+              }
+            }
+
+            label {
+              color: #1c1c1c;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main_btn {
+    margin: 80px auto;
+    max-width: 50%;
+
+    &:hover {
+      box-shadow: inset -30em 0 0 0 #fff, inset 30em 0 0 0 #fff;
+    }
+  }
+}
+// ===================== End payment =====================

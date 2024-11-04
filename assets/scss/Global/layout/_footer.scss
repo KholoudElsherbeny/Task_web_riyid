@@ -1,0 +1,119 @@
+// ================ start footer ==================
+.footer_component {
+  .footer_content {
+    background-image: url(./assets/images/footer.png);
+    // background-repeat: no-repeat;
+    width: 100%;
+    // height: 420px;
+    max-height: 420px;
+    padding: 120px 0;
+    color: $white;
+    .logo {
+      img {
+      }
+    }
+
+    .content {
+      h4 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #f7f7f7;
+      }
+    }
+
+    .info {
+      h5 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 16px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        gap: 9px;
+
+        li {
+          a {
+            display: flex;
+            align-items: flex-end;
+            gap: 7px;
+            color: $white;
+            transition: 0.5s;
+
+            &:hover {
+              gap: 13px;
+              svg {
+                transform: rotate(-90deg);
+                color: $white;
+              }
+            }
+            svg {
+              transition: 0.5s;
+            }
+            span {
+            }
+          }
+        }
+
+        &.social {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          li {
+            .icon {
+              width: 34px;
+              height: 34px;
+              display: block;
+              border: 1px solid $white;
+              @include centering;
+              border-radius: 50%;
+              transition: 0.5s;
+
+              &:hover {
+                background: $white;
+                border: 1px solid $mainColor;
+
+                svg {
+                  transform: unset;
+                  color: $mainColor;
+                }
+              }
+              svg {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copy_right {
+    background: #1c1c1c;
+    color: $white;
+    text-align: center;
+    padding: 16px 0;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .link_website {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    img {
+      object-fit: contain;
+    }
+  }
+}
+// ================ end footer ====================

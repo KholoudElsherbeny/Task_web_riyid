@@ -1,0 +1,241 @@
+//========== start media =========
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
+@media (max-width: 1240px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+}
+
+@media (min-width: 992px) {
+  .sidebar.side_bar_content {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+
+
+  .header_component.testimonial .main_car {
+    > span:last-child,
+    > span:first-child {
+      display: none !important;
+    }
+    .item {
+      .content {
+        width: 95%;
+      }
+    }
+  }
+
+  .profile_side_component .all_side_content {
+    margin-bottom: 30px;
+  }
+
+  .sidebar.side_bar_content {
+    display: block;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hide-media {
+    display: none;
+  }
+
+  .footer_component .footer_content {
+    padding: 70px 0 150px;
+    background-size: cover;
+    height: unset;
+    max-height: unset;
+
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .info {
+      margin: 15px 0;
+      // text-align: center;
+
+      // ul {
+      //   align-items: center;
+      // }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .details_coach .coach_details .all_content .foot {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .contact_component .all_content .all_info .head .main_head {
+    margin-top: -25px;
+  }
+
+  .payment .order_detail.bank_box .all_methods {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .coach_section .main_btn:hover,
+  .main_btn:focus {
+    color: #57009b;
+    box-shadow: inset -16em 0 0 0 #fff, inset 16em 0 0 0 #fff;
+  }
+
+  .profile_side_component .profile_content .profile_main_info .main_box .tabs {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .details_coach .coach_details {
+    flex-direction: column;
+    margin-bottom: 30px;
+    .image,
+    .all_content {
+      width: 100%;
+      max-width: 100%;
+      flex: 100%;
+    }
+  }
+
+  .header_component .item .content {
+    width: 95%;
+    margin: auto;
+  }
+
+  .header_component .item .content {
+    img {
+      max-width: 170px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin: 30px 0;
+      text-align: center;
+    }
+  }
+
+  .signup_page {
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: unset;
+
+    .login_component,
+    .logo_component {
+      max-width: 100%;
+      flex: 100%;
+    }
+  }
+
+  .breadcrumb_component {
+    max-height: 150px;
+
+    .title {
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .profile_side_component
+    .profile_content
+    .profile_main_info
+    .main_box
+    .pass-code.login_component
+    .pass_numbers {
+    gap: 10px;
+
+    input {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .toggle_filter {
+    display: block;
+  }
+
+  .signup_page .login_component.pass-code .pass_numbers {
+    gap: 10px;
+
+    input {
+      width: 60px;
+      height: 60px;
+      padding: 6px;
+    }
+  }
+
+  .details_coach .coach_details .all_content .foot .licence P {
+    font-size: 14px;
+  }
+
+  .favorite_page .hero_image {
+    height: 170px;
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  .contact_component .all_content {
+    padding: 25px;
+
+    .logo {
+      max-width: 180px;
+      margin: 20px auto;
+    }
+
+    .info {
+      text-align: center;
+
+      ul {
+        align-items: center;
+      }
+    }
+  }
+
+  .signup_page .tab_titles ul {
+    gap: 20px;
+    li {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .subscribe_page .rate_button {
+    max-width: 90%;
+  }
+
+  .subscribe_page .contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 400px) {
+}
+
+@media screen and (orientation: landscape) {
+  .b-sidebar > .b-sidebar-body .info {
+    // min-height: 370px;
+  }
+}
+
+//========== end media ===========

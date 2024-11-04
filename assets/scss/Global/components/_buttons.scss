@@ -1,0 +1,24 @@
+/* ============= Start main buttons component =============== */
+.main_btn {
+  height: 56px;
+  transition: 0.7s;
+  color: $white;
+  text-transform: capitalize;
+  @include centering;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  text-align: center;
+  background: $mainColor;
+  font-weight: 800;
+
+  &:hover,
+  &:focus {
+    color: $mainColor;
+    box-shadow: inset -9em 0 0 0 #fff, inset 9em 0 0 0 #fff;
+  }
+}
+
+/* ============== end main buttons component ================ */

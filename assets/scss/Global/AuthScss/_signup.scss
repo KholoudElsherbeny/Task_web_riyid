@@ -1,0 +1,211 @@
+// ======== start signUp ===========
+
+.signup_page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  .profile_image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 25px;
+
+    img {
+      // border-radius: 50%;
+    }
+  }
+
+  .upload_profile {
+    position: relative;
+
+    input {
+      display: none;
+    }
+
+    // label {
+    //   position: absolute;
+    //   bottom: -10px;
+    //   left: -15px;
+    //   width: 50px;
+    //   height: 50px;
+    //   background: $white;
+    //   border-radius: 50%;
+    //   color: $mainColor;
+    //   cursor: pointer;
+    //   @include centering;
+    // }
+  }
+
+  .login_component {
+    max-width: 50%;
+    flex: 50%;
+    background-image: url(./assets/images/signup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.pass-code {
+      .pass_numbers {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 20px;
+
+        input {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    .row {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+
+      .under_input {
+        .forget_pass {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          color: $white;
+          &.restore {
+            margin-top: 20px;
+          }
+        }
+        .clock {
+          color: $mainColor;
+        }
+      }
+
+      .head {
+        text-align: center;
+
+        h2 {
+          color: $white;
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 700;
+          margin-bottom: 32px;
+        }
+      }
+
+      form {
+        .main_btn {
+          margin-top: 80px;
+          &:hover {
+            box-shadow: inset -17em 0 0 0 #fff, inset 17em 0 0 0 #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .logo_component {
+    max-width: 50%;
+    flex: 50%;
+    background-image: url(./assets/images/bg-logo.png);
+    @include backgroundImage_2;
+    // height: 100%;
+    .box {
+      @include centering;
+      img {
+      }
+    }
+  }
+
+  .tab_titles {
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      margin-bottom: 20px;
+
+      li {
+        cursor: pointer;
+        p {
+          font-size: 25px;
+          font-weight: 500;
+          padding-bottom: 16px;
+          color: $white;
+        }
+
+        &.active_tab {
+          border-bottom: 2px solid rgba(87, 0, 155, 1);
+        }
+      }
+    }
+  }
+}
+
+// ======== end signUp =============
+
+// ==================== start checkbox =============
+
+.agree {
+  a {
+    text-decoration: underline !important;
+    color: #fff;
+  }
+}
+
+.agree input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.agree label {
+  position: relative;
+  cursor: pointer;
+
+  span {
+    color: $white;
+    font-weight: 500;
+
+    &:first-of-type {
+      margin-inline-end: 10px;
+    }
+
+    &.terms {
+      font-weight: 800;
+      color: $white;
+    }
+  }
+}
+
+.agree label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: $white;
+  border: 2px solid $white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  // padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.agree input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 12px;
+  width: 10px;
+  height: 18px;
+  border: solid $mainColor;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+// ==================== end checkbox =============

@@ -1,0 +1,21 @@
+/* ============= Start heading component =============== */
+.main_head {
+  color: rgba(28, 28, 28, 1);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px 0 20px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.price {
+  color: $mainColor;
+  span {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+/* ============== end heading component ================ */
